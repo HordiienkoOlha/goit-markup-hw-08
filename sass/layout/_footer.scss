@@ -33,11 +33,13 @@
   color: var(--footer-contacts-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
-&:focus {
-  color: var(--accent-color);
+  &:focus {
+    color: var(--accent-color);
+  }
 }
+.container__join {
+  margin-left: 70px;
 }
-
 .join__title {
   font-weight: 700;
   font-size: 14px;
@@ -51,9 +53,9 @@
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
-&:focus {
-  background-color: var(--accent-color);
-}
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 .socials--icon-white-fill {
   fill: var(--primary-white-color);
@@ -61,7 +63,6 @@
 
 .container__subscribe {
   margin-left: 90px;
-
 }
 
 .subscribe {
@@ -92,15 +93,9 @@
 }
 
 .subscribe__button {
-border: 1px solid var(--accent-color);
-
+  border: 1px solid var(--accent-color);
 }
-
 .subscribe__icon {
   fill: currentColor;
   vertical-align: middle;
-}
-
-.container__join {
-  margin-left: 70px;
 }
