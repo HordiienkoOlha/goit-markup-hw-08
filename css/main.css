@@ -510,6 +510,7 @@ a {
 .contacts__link {
   display: flex;
   color: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts__link:focus, .contacts__link:hover {
@@ -518,6 +519,7 @@ a {
 
 .contacts__icon {
   margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts__icon:hover, .contacts__icon:focus {
@@ -578,15 +580,18 @@ a {
   position: absolute;
   top: 10px;
   right: 15px;
-  background-color: transparent;
-  border: none;
   width: 40px;
   height: 40px;
+  padding: 0;
+  line-height: 0;
+  background-color: transparent;
+  border: none;
 }
 
 .close-btn-icon {
   width: 40px;
   height: 40px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn:focus .close-btn-icon,
@@ -609,12 +614,13 @@ a {
   margin-bottom: 0;
 }
 
-.menu__item:hover, .menu__item:focus {
-  color: var(--accent-color);
-}
-
 .menu__link {
   color: var(--secondary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu__link:hover, .menu__link:focus {
+  color: var(--accent-color);
 }
 
 .menu__contacts {
@@ -635,6 +641,11 @@ a {
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu__contacts--tel:hover, .menu__contacts--tel:focus {
+  color: #188ce8;
 }
 
 .menu__contacts--mail {
@@ -643,6 +654,26 @@ a {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu__contacts--mail:hover, .menu__contacts--mail:focus {
+  color: var(--accent-color);
+}
+
+.menu__socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 64px;
+}
+
+.menu__socials--link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
 
 .hero {
