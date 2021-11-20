@@ -663,9 +663,21 @@ a {
 
 .menu__socials {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-top: 64px;
+  margin-right: 43px;
+}
+
+.menu__socials > .menu__socials--item {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.menu__socials--item {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu__socials--item:last-child {
+  border-right: none;
 }
 
 .menu__socials--link {

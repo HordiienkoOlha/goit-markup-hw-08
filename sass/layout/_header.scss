@@ -282,14 +282,19 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .menu__socials {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+
   margin-top: 64px;
-
-
+  margin-right: 43px;
+}
+.menu__socials > .menu__socials--item {
+  flex-grow: 1;
+  text-align: center;
 }
 .menu__socials--item {
-
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  &:last-child {
+    border-right: none;
+}
 
 }
 .menu__socials--link {
@@ -298,19 +303,4 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-
-//   &::before {
-//   content: '';
-//   width: 22px;
-//   height: 1px;
-//   margin-right: 10px;
-//   color: var(--primary-text-color);
-// }
-// &::after {
-//   content: '';
-//   width: 60px;
-//   height: 1px;
-//   background-color: #303030;
-//   margin-right: 10px;
-// }
 }
