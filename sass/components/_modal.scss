@@ -1,7 +1,9 @@
 .container__modal {
+  z-index: 100;
   position: absolute;
-  width: 528px;
-  min-height: 581px;
+
+
+
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -9,6 +11,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    min-height: 609px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 .modal__btn {
   border: 1px solid rgba(0, 0, 0, 0.1);
