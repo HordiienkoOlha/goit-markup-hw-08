@@ -9,7 +9,7 @@
 
 .container__projects {
   margin-top: 25px;
-  margin-bottom: 30px;
+
 
   @media screen and (min-width: 768px) {
   margin-top: 30px;
@@ -25,6 +25,11 @@
 }
 
 .projects__item {
+  border: 1px solid rgba(238, 238, 238, 1);
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   @media screen and (min-width: 768px) {
 
   }
@@ -32,7 +37,7 @@
   flex-basis: calc((100% - 3 * 30px) / 3);
   margin-left: 30px;
   margin-bottom: 30px;
-  border: 1px solid rgba(238, 238, 238, 1);
+  
   }
 }
 .projects__link {

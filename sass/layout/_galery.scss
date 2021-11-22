@@ -1,6 +1,16 @@
 .section--no-padding-top {
-  
   padding-top: 0;
+
+}
+
+.section--no-padding-bottom {
+  padding-bottom: 0;
+  @media screen and (max-width: 1199px) {
+  display: none;
+  }
+  @media screen and (min-width: 1200px) {
+  padding-bottom: 94px;
+  }
 }
 
 .container__galery {
