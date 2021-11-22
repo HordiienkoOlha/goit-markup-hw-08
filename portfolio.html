@@ -25,9 +25,9 @@
             <a class="logo" lang="en" href=""><span class="logo__accent">Web</span><span
                     class="logo__dark">Studio</span></a>
             <ul class="navigation__list">
-                <li class="navigation__item"><a class="navigation__link navigation__link--accent "
+                <li class="navigation__item"><a class="navigation__link "
                         href="./index.html">Студия</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="./portfolio.html">Портфолио</a></li>
+                <li class="navigation__item"><a class="navigation__link navigation__link--accent" href="./portfolio.html">Портфолио</a></li>
                 <li class="navigation__item"><a class="navigation__link" href="">Контакты</a></li>
             </ul>
         </nav>
@@ -78,7 +78,7 @@
     </div>
 </header>
     <main>
-        <section class="section">
+        <section class="section section--no-padding-top">
             <div class="container container__portfolio">
             <h1 class="section__title visually-hidden">Портфолио</h1>
             <ul class="portfolio">
@@ -89,11 +89,40 @@
                 <li class="portfolio__item"><button class="portfolio__button" type="button">Маркетинг</button></li>
             </ul>
         
-            <ul class="projects">
+            <ul class="projects container__projects">
                 <li class="projects__item">
                     <a href="" class="projects__link">
                         <div class="projects__position">
-                            <img src="./images/page21-min.jpg" alt="Технокряк" width="370" height="294" />
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="
+                                ./images/project/tehno/tehno-min-d.webp 1x,
+                                ./images/project/tehno/tehno-min-d@2x.webp 2x
+                                " type="image/webp" />
+                            <source media="(min-width: 1200px)" srcset="
+                                ./images/project/tehno/tehno-min-d.jpg 1x,
+                                ./images/project/tehno/tehno-min-d@2x.jpg 2x
+                                " />
+
+                            <source media="(min-width: 768px)" srcset="
+                                ./images/project/tehno/tehno-min-t.webp 1x,
+                                ./images/project/tehno/tehno-min-t@2x.webp 2x
+                                " type="image/webp" />
+                            <source media="(min-width: 768px)" srcset="
+                                ./images/project/tehno/tehno-min-t.jpg 1x,
+                                    ./images/project/tehno/tehno-min-t@2x.jpg 2x
+                                " />
+
+                            <source media="(min-width: 280px)" srcset="
+                                ./images/project/tehno/tehno-min.webp 1x,
+                                ./images/project/tehno/tehno-min@2x.webp 2x
+                                " type="image/webp" />
+                            <source media="(min-width: 280px)" srcset="
+                                ./images/project/tehno/tehno-min.jpg 1x,
+                                ./images/project/tehno/tehno-min@2x.jpg 2x
+                                " />
+                        <img src="./images/project/tehno/tehno-min.jpg" alt="Технокряк"/>
+                        </picture>
+                            
                             <p class="projects__overley">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                         </div>
                         <div class="projects__holder">
@@ -207,7 +236,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer footer--dark-background">
+    <!-- <footer class="footer footer--dark-background">
         <div class="container container__footer">
             <div class="info">
                 <a class="logo" lang="en" href=""><span class="logo__accent">Web</span><span
@@ -267,7 +296,7 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
 </body>
 </html>

@@ -1,9 +1,14 @@
 .section--no-padding-top {
+  
+  padding-top: 0;
+}
+
+.container__galery {
   @media screen and (max-width: 1200px) {
   display: none;
   }
-  padding-top: 0;
 }
+
 .title--display--none {
   @media screen and (max-width: 1200px) {
   display: none;
