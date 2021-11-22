@@ -1,4 +1,7 @@
-.section--no-paddihg-top {
+.section--no-padding-top {
+  @media screen and (max-width: 1200px) {
+  display: none;
+  }
   padding-top: 0;
 }
 .title--display--none {
@@ -16,6 +19,7 @@
 }
 
 .galery {
+  
   @media screen and (max-width: 1200px) {
   display: none;
   }
