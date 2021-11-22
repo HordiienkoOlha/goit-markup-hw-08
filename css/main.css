@@ -1071,6 +1071,7 @@ a {
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1140,11 +1141,37 @@ a {
 
 .container__footer {
   display: flex;
-  align-items: baseline;
+}
+
+@media screen and (max-width: 767px) {
+  .container__footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container__footer {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__footer {
+    align-items: baseline;
+  }
 }
 
 .info {
   width: 231px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .info {
+    text-align: start;
+  }
 }
 
 .container__address {
@@ -1179,8 +1206,26 @@ a {
   color: var(--accent-color);
 }
 
-.container__join {
-  margin-left: 70px;
+@media screen and (max-width: 767px) {
+  .container__join {
+    margin-bottom: 60px;
+    margin-top: 60px;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container__join {
+    margin-left: 165px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__join {
+    margin-left: 70px;
+  }
 }
 
 .join__title {
@@ -1205,12 +1250,28 @@ a {
   fill: var(--primary-white-color);
 }
 
-.container__subscribe {
-  margin-left: 90px;
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container__subscribe {
+    margin-top: 60px;
+  }
 }
 
-.subscribe {
-  width: 570px;
+@media screen and (min-width: 1200px) {
+  .container__subscribe {
+    margin-left: 90px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe {
+    width: 358px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    width: 570px;
+  }
 }
 
 .subscribe__title {
@@ -1220,6 +1281,12 @@ a {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-white-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe__title {
+    text-align: center;
+  }
 }
 
 .subscribe__input {
@@ -1238,9 +1305,25 @@ a {
   border: 1px solid var(--accent-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .subscribe__button {
+    margin-top: 20px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
 .subscribe__icon {
   fill: currentColor;
   vertical-align: middle;
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .portfolio {
