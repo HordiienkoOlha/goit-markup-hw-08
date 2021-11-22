@@ -1,7 +1,12 @@
 .section--no-paddihg-top {
   padding-top: 0;
 }
+.title--display--none {
+  @media screen and (max-width: 1200px) {
+  display: none;
+  }
 
+}
 .galery__item {
   margin-right: 30px;
   position: relative;
@@ -11,8 +16,14 @@
 }
 
 .galery {
+  @media screen and (max-width: 1200px) {
+  display: none;
+  }
+  @media screen and (min-width: 1200px) {
+
   display: flex;
   margin-top: 50px;
+}
 }
 
 .galery__text {

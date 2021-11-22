@@ -17,6 +17,7 @@
 </head>
 
 <body>
+<!-- Header -->
     <header class="header">
         <div class="container container__header">
         <nav class="navigation">
@@ -27,10 +28,7 @@
                 <li class="navigation__item"><a class="navigation__link" href="">Контакты</a></li>
             </ul>
         </nav>
-
-
-
-
+<!-- Start mobile menu -->
         <div class="mobile-menu" data-menu>
         <button class="close-btn" data-menu-close>
             <svg class="close-btn-icon">
@@ -53,9 +51,9 @@
             <li class="menu__socials--item"><a class="menu__socials--link" href="">Facebook</a></li>
             <li class="menu__socials--item"><a class="menu__socials--link" href="">LinkedIn</a></li>
         </ul>
-
         </div>
-
+<!-- End mobile menu -->
+<!-- contacts -->
         <ul class="contacts">
             <li class="contacts__item"><a class="contacts__link" lang="en" href="mailto:info@devstudio.com">
                 <svg class="contacts__icon contacts__icon--tel">
@@ -66,65 +64,25 @@
                     <use href="./images/sprite.svg#icon-smartphone"></use>
                 </svg>+38 096 111 11 11</a></li>
         </ul>
+<!-- Burger button -->
         <button class="burger-btn" data-menu-open>
             <svg class="burger-btn-icon">
                 <use href="./images/sprite.svg#burger-icon"></use>
             </svg>
         </button>
-
-        
         </div>
     </header>
     <main>
+<!-- Hero -->
     <section class="hero">
         <div class="container container__hero">
-            <picture>
-                <source
-                    media="(min-width: 1200px)"
-                    srcset="
-                    ./images/hero-min-d.webp 1x,
-                    ./images/hero-min-d@2x.webp 2x
-                    " type="image/webp"/>
-                <source
-                    media="(min-width: 1200px)"
-                    srcset="
-                    ./images/hero-min-d.jpg 1x,
-                    ./images/hero-min-d@2x.jpg 2x
-                    "/>
-
-                <source
-                    media="(min-width: 768px)"
-                    srcset="
-                    ./images/hero-min-t.webp 1x,
-                    ./images/hero-min-t@2x.webp 2x
-                    "
-                    type="image/webp"/>
-                <source
-                    media="(min-width: 768px)"
-                    srcset="
-                    ./images/hero-min-t.jpg 1x,
-                    ./images/hero-min-t@2x.jpg 2x
-                    "/>
-
-                <source 
-                    media="(min-width: 480px)" 
-                    srcset="
-                    ./images/hero-min.webp 1x,
-                    ./images/hero-min@2x.webp 2x
-                    "
-                    type="image/webp"/>
-                <source
-                    media="(min-width: 480px)"
-                    srcset="
-                    ./images/hero-min.jpg 1x,
-                    ./images/hero-min@2x.jpg 2x
-                    "/>
-                </picture>
+            
             <h1 class="hero__title">Эффективные решения<br>для вашего бизнеса</h1>
             <button type="button" data-modal-open class="button hero__button">Заказать услугу</button>
         </div>
     </section>       
-    <!-- <section class="section">
+<!-- features -->
+    <section class="section">
         <div class="container">
             <h2 class="visually-hidden">Особенности</h2>
             <ul class="features">
@@ -167,33 +125,105 @@
                 </li>
             </ul>
         </div>
-        </section> -->
-        <!-- <section class="section section--no-paddihg-top">
-            <div class="container ">
-            <h2 class="section__title">Чем мы занимаемся</h2>
-            <ul class="galery">
-                <li class="galery__item">
-                    <img src="./images/box1.jpg" alt="Верстка, рабочий процес" width="370" height="294" />
-                    <p class="galery__text">Десктопные приложения</p>
+    </section>
+<!-- galery -->
+    <section class="section section--no-paddihg-top">
+        <div class="container ">
+        <h2 class="section__title title--display--none">Чем мы занимаемся</h2>
+        <ul class="galery">
+            <li class="galery__item">
+                <picture>
+                    <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                    ./images/galery/galery-box1-d.webp 1x,
+                    ./images/galery/galery-box1-d@2x.webp 2x
+                    " type="image/webp"/>
+                    <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                    ./images/galery/galery-box1-d.jpg 1x,
+                    ./images/galery/galery-box1-d@2x.jpg 2x
+                    "/>
+                    <img src="./images/galery/galery-box1-d-min.jpg" alt="Верстка, рабочий процес" width="370" height="294" />
+                </picture>
+                <p class="galery__text">Десктопные приложения</p>
                 </li>
-                <li class="galery__item"> 
-                    <img src="./images/box2.jpg" alt="Адаптация на смартфон" width="370" height="294" />
+            <li class="galery__item"> 
+                    <picture>
+                        <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                        ./images/galery/galery-box2-d.webp 1x,
+                        ./images/galery/galery-box2-d@2x.webp 2x
+                        " type="image/webp"/>
+                        <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                        ./images/galery/galery-box2-d.jpg 1x,
+                        ./images/galery/galery-box2-d@2x.jpg 2x
+                        "/>
+                        <img src="./images//galery/galery-box2-d-min.jpg" alt="Адаптация на смартфон" width="370" height="294" />                    
+                    </picture>                    
                     <p class="galery__text">Мобильные приложения</p>
                 </li>
                 <li class="galery__item">
-                    <img src="./images/box3.jpg" alt="Подбор цвета на планшете" width="370" height="294" />
+                    <picture>
+                        <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                        ./images/galery/galery-box3-d.webp 1x,
+                        ./images/galery/galery-box3-d@2x.webp 2x
+                        " type="image/webp"/>
+                        <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                        ./images/galery/galery-box3-d.jpg 1x,
+                        ./images/galery/galery-box3-d@2x.jpg 2x
+                        "/>
+                        <img src="./images/galery/galery-box3-d-min.jpg" alt="Подбор цвета на планшете" width="370" height="294" />                    
+                    </picture>                    
+
                     <p class="galery__text">Дизайнерские решения</p>
                 </li> 
-            </ul>
-            </div>
-        </section> -->
-
-        <!-- <section class="section team--gray-background">
+        </ul>
+        </div>
+        </section>
+<!-- team -->
+        <section class="section team--gray-background">
             <div class="container">
             <h2 class="section__title">Наша команда</h2>
             <ul class="team container__team">
                 <li class="team__item">
-                    <img src="./images/img3.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="
+                                        ./images/team/pr-designer/pr-designer-min-d.webp 1x,
+                                        ./images/team/pr-designer/pr-designer-min-d@2x.webp 2x
+                                        " type="image/webp" />
+                        <source media="(min-width: 1200px)" srcset="
+                                        ./images/team/pr-designer/pr-designer-min-d.jpg 1x,
+                                        ./images/team/pr-designer/pr-designer-min-d@2x.jpg 2x
+                                        " />
+                    
+                        <source media="(min-width: 768px)" srcset="
+                                        ./images/team/pr-designer/pr-designer-min-t.webp 1x,
+                                        ./images/team/pr-designer/pr-designer-min-t@2x.webp 2x
+                                        " type="image/webp" />
+                        <source media="(min-width: 768px)" srcset="
+                                        ./images/team/pr-designer/pr-designer-min-t.jpg 1x,
+                                        ./images/team/pr-designer/pr-designer-min-t@2x.jpg 2x
+                                        " />
+                    
+                        <source media="(min-width: 480px)" srcset="
+                                        ./images/team/pr-designer/pr-designer-min.webp 1x,
+                                        ./images/team/pr-designer/pr-designer-min@2x.webp 2x
+                                        " type="image/webp" />
+                        <source media="(min-width: 480px)" srcset="
+                                        ./images/team/pr-designer/pr-designer-min.jpg 1x,
+                                        ./images/team/pr-designer/pr-designer-min@2x.jpg 2x
+                                        " />
+                        <img src="./images/team/pr-designer/pr-designer-min.jpg" alt="Игорь Демьяненко" />
+                    </picture>
                     <div class="team__person">
                     <h3 class="team__title">Игорь Демьяненко</h3>
                     <p class="team__description" lang="en">Product Designer</p>
@@ -230,7 +260,35 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img src="./images/img2.jpg" alt="Ольга Репина" width="270" height="260" />
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="
+                                        ./images/team/developer/developer-min-d.webp 1x,
+                                        ./images/team/developer/developer-min-d@2x.webp 2x
+                                        " type="image/webp" />
+                        <source media="(min-width: 1200px)" srcset="
+                                        ./images/team/developer/developer-min-d.jpg 1x,
+                                        ./images/team/developer/developer-min-d@2x.jpg 2x
+                                        " />
+                    
+                        <source media="(min-width: 768px)" srcset="
+                                        ./images/team/developer/developer-min-t.webp 1x,
+                                        ./images/team/developer/developer-min-t@2x.webp 2x
+                                        " type="image/webp" />
+                        <source media="(min-width: 768px)" srcset="
+                                        ./images/team/developer/developer-min-t.jpg 1x,
+                                        ./images/team/developer/developer-min-t@2x.jpg 2x
+                                        " />
+                    
+                        <source media="(min-width: 480px)" srcset="
+                                        ./images/team/developer/developer-min.webp 1x,
+                                        ./images/team/developer/developer-min@2x.webp 2x
+                                        " type="image/webp" />
+                        <source media="(min-width: 480px)" srcset="
+                                        ./images/team/developer/developer-min.jpg 1x,
+                                        ./images/team/developer/developer-min@2x.jpg 2x
+                                        " />
+                        <img src="./images/team/developer/developer-min.jpg" alt="Ольга Репина"/>
+                    </picture>
                     <div class="team__person">
                         <h3 class="team__title">Ольга Репина</h3>
                         <p class="team__description" lang="en">Frontend Developer</p>
@@ -267,7 +325,35 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img src="./images/img1.jpg" alt="Николай Тарасов" width="270" height="260" />
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="
+                                        ./images/team/marketing/marketing-min-d.webp 1x,
+                                        ./images/team/marketing/marketing-min-d@2x.webp 2x
+                                        " type="image/webp" />
+                        <source media="(min-width: 1200px)" srcset="
+                                        ./images/team/marketing/marketing-min-d.jpg 1x,
+                                        ./images/team/marketing/marketing-min-d@2x.jpg 2x
+                                        " />
+                    
+                        <source media="(min-width: 768px)" srcset="
+                                        ./images/team/marketing/marketing-min-t.webp 1x,
+                                        ./images/team/marketing/marketing-min-t@2x.webp 2x
+                                        " type="image/webp" />
+                        <source media="(min-width: 768px)" srcset="
+                                        ./images/team/marketing/marketing-min-t.jpg 1x,
+                                        ./images/team/marketing/marketing-min-t@2x.jpg 2x
+                                        " />
+                    
+                        <source media="(min-width: 480px)" srcset="
+                                        ./images/team/marketing/marketing-min.webp 1x,
+                                        ./images/team/marketing/marketing-min@2x.webp 2x
+                                        " type="image/webp" />
+                        <source media="(min-width: 480px)" srcset="
+                                        ./images/team/marketing/marketing-min.jpg 1x,
+                                        ./images/team/marketing/marketing-min@2x.jpg 2x
+                                        " />
+                        <img src="./images/team/marketing/marketing-min.jpg" alt="Николай Тарасов"/>
+                    </picture>
                     <div class="team__person">
                     <h3 class="team__title">Николай Тарасов</h3>
                     <p class="team__description" lang="en">Marketing</p>
@@ -304,7 +390,35 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img src="./images/img.jpg" alt="Михаил Ермаков" width="270" height="260" />
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="
+                                        ./images/team/ui-designer/ui-designer-min-d.webp 1x,
+                                        ./images/team/ui-designer/ui-designer-min-d@2x.webp 2x
+                                        " type="image/webp" />
+                        <source media="(min-width: 1200px)" srcset="
+                                        ./images/team/ui-designer/ui-designer-min-d.jpg 1x,
+                                        ./images/team/ui-designer/ui-designer-min-d@2x.jpg 2x
+                                        " />
+                    
+                        <source media="(min-width: 768px)" srcset="
+                                        ./images/team/ui-designer/ui-designer-min-t.webp 1x,
+                                        ./images/team/ui-designer/ui-designer-min-t@2x.webp 2x
+                                        " type="image/webp" />
+                        <source media="(min-width: 768px)" srcset="
+                                        ./images/team/ui-designer/ui-designer-min-t.jpg 1x,
+                                        ./images/team/ui-designer/ui-designer-min-t@2x.jpg 2x
+                                        " />
+                    
+                        <source media="(min-width: 480px)" srcset="
+                                        ./images/team/ui-designer/ui-designer-min.webp 1x,
+                                        ./images/team/ui-designer/ui-designer-min@2x.webp 2x
+                                        " type="image/webp" />
+                        <source media="(min-width: 480px)" srcset="
+                                        ./images/team/ui-designer/ui-designer-min.jpg 1x,
+                                        ./images/team/ui-designer/ui-designer-min@2x.jpg 2x
+                                        " />
+                        <img src="./images/team/ui-designer/ui-designer-min.jpg" alt="Михаил Ермаков"/>
+                    </picture>
                     <div class="team__person">
                     <h3 class="team__title">Михаил Ермаков</h3>
                     <p class="team__description" lang="en">UI Designer</p>
@@ -342,9 +456,9 @@
                 </li>
             </ul>
             </div>
-        </section> -->
-
-        <!-- <section class="section">
+        </section>
+<!-- clients -->
+        <section class="section">
             <div class="container">
                 <h2 class="section__title">Постоянные клиенты</h2>
                 <ul class="clients">
@@ -392,7 +506,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
     <!-- <footer class="footer footer--dark-background">
         <div class="container container__footer">
