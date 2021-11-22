@@ -1,14 +1,19 @@
 .projects {
   display: flex;
   flex-wrap: wrap;
-
+  @media screen and (min-width: 768px) {
+  
+  justify-content: space-between;
+  }
 }
 
 .container__projects {
   margin-top: 25px;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
   margin-top: 30px;
+
   }
 
   @media screen and (min-width: 1200px) {
@@ -20,10 +25,15 @@
 }
 
 .projects__item {
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 1200px) {
   flex-basis: calc((100% - 3 * 30px) / 3);
   margin-left: 30px;
   margin-bottom: 30px;
   border: 1px solid rgba(238, 238, 238, 1);
+  }
 }
 .projects__link {
   color: inherit;
@@ -44,7 +54,7 @@
 .projects__overley {
   position: absolute;
   padding: 63px 24px;
-  top: 2px;
+  top: 28px;
   left: 0;
 
   font-size: 18px;
