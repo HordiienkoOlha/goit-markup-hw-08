@@ -2,7 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   @media screen and (min-width: 768px) {
-  
   justify-content: space-between;
   }
 }
@@ -10,11 +9,9 @@
 .container__projects {
   margin-top: 25px;
 
-
   @media screen and (min-width: 768px) {
   margin-top: 30px;
   }
-
   @media screen and (min-width: 1200px) {
     margin-top: 50px;
     margin-left: -30px;
@@ -43,6 +40,11 @@
   color: inherit;
   display: block;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media (min-width: 768px) and (max-width: 1199px) {
+    height: 100%;
+  }
+
+
   &:hover,
   &:focus {
     border: 1px #eeeeee;
