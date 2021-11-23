@@ -2,7 +2,6 @@
   display: flex;
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
-
   }
   @media screen and (min-width: 768px) {
   justify-content: center;
@@ -22,7 +21,6 @@
 }
 
 .portfolio__button {
-
   padding: 6px 22px 6px 22px;
   border: 0px;
   border-radius: 4px;
@@ -49,7 +47,5 @@
 
   @media screen and (max-width: 767px) {
     margin-bottom: 15px;
-
   }
-
 }
