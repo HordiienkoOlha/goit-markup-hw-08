@@ -200,9 +200,8 @@
 
   padding: 48px 40px;
 
-  // background-color: var(--primary-white-color);
-  background-color: tomato;
-  opacity: 0;
+  background-color: var(--primary-white-color);
+
   visibility: hidden;
   pointer-events: none;
 
@@ -238,14 +237,9 @@
   }
 }
 
-// .menu__list--position {
-//   display: flex;
-//   flex-direction: colu;
-//   margin-top: auto;
-// }
 .menu__list {
   font-weight: 500;
-  font-size: 8vh;
+  font-size: 40px;
   line-height: 1.18;
   letter-spacing: 0.02em;
 }
