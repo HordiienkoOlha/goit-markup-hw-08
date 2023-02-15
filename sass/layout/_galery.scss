@@ -5,41 +5,40 @@
 .section--no-padding-bottom {
   padding-bottom: 0;
   @media screen and (max-width: 1199px) {
-  display: none;
+    display: none;
   }
   @media screen and (min-width: 1200px) {
-  padding-bottom: 94px;
+    padding-bottom: 94px;
   }
 }
 
 .container__galery {
   @media screen and (max-width: 1200px) {
-  display: none;
+    display: none;
   }
 }
 
 .title--display--none {
   @media screen and (max-width: 1200px) {
-  display: none;
+    display: none;
   }
-
 }
 .galery__item {
   margin-right: 30px;
   position: relative;
   &:last-child {
-  margin-right: 0;
-}
+    margin-right: 0;
+  }
 }
 
 .galery {
   @media screen and (max-width: 1200px) {
-  display: none;
+    display: none;
   }
   @media screen and (min-width: 1200px) {
-  display: flex;
-  margin-top: 50px;
-}
+    display: flex;
+    margin-top: 50px;
+  }
 }
 
 .galery__text {

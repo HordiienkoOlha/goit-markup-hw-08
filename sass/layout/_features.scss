@@ -21,11 +21,10 @@
   }
   @media screen and (min-width: 1200px) {
     width: 270px;
-  &:last-child {
-  margin-right: 0;
+    &:last-child {
+      margin-right: 0;
+    }
   }
-  }
-  
 }
 .features__bg {
   display: flex;
@@ -41,9 +40,9 @@
   }
   @media screen and (min-width: 1200px) {
     width: 270px;
-  &:last-child {
-  margin-right: 0;
-  }
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 .features__title {
@@ -56,7 +55,6 @@
   @media screen and (min-width: 768px) {
     text-align: start;
   }
-
 }
 .features__text {
   margin-top: 10px;

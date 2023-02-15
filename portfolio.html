@@ -1,528 +1,909 @@
 <!DOCTYPE html>
-<html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/main.min.css">
-</head>
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/public/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/public/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/public/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/public/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/public/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
 
-<body>
-<!-- Header -->
-<header class="header">
-    <div class="container container__header">
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container container__header">
         <nav class="navigation">
-            <a class="logo" lang="en" href=""><span class="logo__accent">Web</span><span
-                    class="logo__dark">Studio</span></a>
-            <ul class="navigation__list">
-                <li class="navigation__item"><a class="navigation__link "
-                        href="./index.html">Студия</a></li>
-                <li class="navigation__item"><a class="navigation__link navigation__link--accent" href="./portfolio.html">Портфолио</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="">Контакты</a></li>
-            </ul>
+          <a class="logo" lang="en" href=""
+            ><span class="logo__accent">Web</span
+            ><span class="logo__dark">Studio</span></a
+          >
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="./index.html">Студія</a>
+            </li>
+            <li class="navigation__item">
+              <a
+                class="navigation__link navigation__link--accent"
+                href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="">Контакти</a>
+            </li>
+          </ul>
         </nav>
         <!-- Start mobile menu -->
         <div class="mobile-menu" data-menu>
-            <button class="close-btn" data-menu-close>
-                <svg class="close-btn-icon">
-                    <use href="./images/sprite.svg#icon-close-header"></use>
-                </svg>
-            </button>
-            <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link menu__link--color" href="./index.html">Студия</a>
-                </li>
-                <li class="menu__item"><a class="menu__link menu__link--accent" href="./portfolio.html">Портфолио</a></li>
-                <li class="menu__item"><a class="menu__link--color" href="">Контакты</a></li>
-            </ul>
-            <ul class="menu__contacts">
-                <li class="menu__contacts--item"><a class="menu__contacts--tel" href="tel:+380991111111">+38 096 111 11
-                        11</a></li>
-                <li class="menu__contacts--item"><a class="menu__contacts--mail" lang="en"
-                        href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            </ul>
-            <ul class="menu__socials">
-                <li class="menu__socials--item"><a class="menu__socials--link" href="">Instagram</a></li>
-                <li class="menu__socials--item"><a class="menu__socials--link" href="">Twitter</a></li>
-                <li class="menu__socials--item"><a class="menu__socials--link" href="">Facebook</a></li>
-                <li class="menu__socials--item"><a class="menu__socials--link" href="">LinkedIn</a></li>
-            </ul>
+          <button class="close-btn" data-menu-close>
+            <svg class="close-btn-icon">
+              <use href="./images/sprite.svg#icon-close-header"></use>
+            </svg>
+          </button>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link menu__link--color" href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--accent" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="menu__item">
+              <a class="menu__link--color" href="">Контакти</a>
+            </li>
+          </ul>
+          <ul class="menu__contacts">
+            <li class="menu__contacts--item">
+              <a class="menu__contacts--tel" href="tel:+380991111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="menu__contacts--item">
+              <a
+                class="menu__contacts--mail"
+                lang="en"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="menu__socials">
+            <li class="menu__socials--item">
+              <a class="menu__socials--link" href="">Instagram</a>
+            </li>
+            <li class="menu__socials--item">
+              <a class="menu__socials--link" href="">Twitter</a>
+            </li>
+            <li class="menu__socials--item">
+              <a class="menu__socials--link" href="">Facebook</a>
+            </li>
+            <li class="menu__socials--item">
+              <a class="menu__socials--link" href="">LinkedIn</a>
+            </li>
+          </ul>
         </div>
         <!-- End mobile menu -->
         <!-- contacts -->
         <ul class="contacts">
-            <li class="contacts__item"><a class="contacts__link" lang="en" href="mailto:info@devstudio.com">
-                    <svg class="contacts__icon contacts__icon--tel">
-                        <use href="./images/sprite.svg#icon-envelope"></use>
-                    </svg>info@devstudio.com</a></li>
-            <li class="contacts__item"><a class="contacts__link" href="tel:+380991111111">
-                    <svg class="contacts__icon contacts__icon--mail">
-                        <use href="./images/sprite.svg#icon-smartphone"></use>
-                    </svg>+38 096 111 11 11</a></li>
+          <li class="contacts__item">
+            <a
+              class="contacts__link"
+              lang="en"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="contacts__icon contacts__icon--tel">
+                <use href="./images/sprite.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380991111111">
+              <svg class="contacts__icon contacts__icon--mail">
+                <use href="./images/sprite.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
         <!-- Burger button -->
         <button class="burger-btn" data-menu-open>
-            <svg class="burger-btn-icon">
-                <use href="./images/sprite.svg#burger-icon"></use>
-            </svg>
+          <svg class="burger-btn-icon">
+            <use href="./images/sprite.svg#burger-icon"></use>
+          </svg>
         </button>
-    </div>
-</header>
+      </div>
+    </header>
     <main>
-        <section class="section">
-            <div class="container container__portfolio">
-            <h1 class="section__title visually-hidden">Портфолио</h1>
-            <ul class="portfolio">
-                <li class="portfolio__item"><button class="portfolio__button" type="button">Все</button></li>
-                <li class="portfolio__item"><button class="portfolio__button" type="button">Веб-сайты</button></li>
-                <li class="portfolio__item"><button class="portfolio__button" type="button">Приложения</button></li>
-                <li class="portfolio__item"><button class="portfolio__button" type="button">Дизайн</button></li>
-                <li class="portfolio__item"><button class="portfolio__button" type="button">Маркетинг</button></li>
-            </ul>
-        
-            <ul class="projects container__projects">
-                <li class="projects__item">
-                    <a href="" class="projects__link">
-                        <div class="projects__position">
-                        <picture>
-                            <source media="(min-width: 1200px)" srcset="
-                                ./images/project/tehno/tehno-min-d.webp 1x,
-                                ./images/project/tehno/tehno-min-d@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 1200px)" srcset="
-                                ./images/project/tehno/tehno-min-d.jpg 1x,
-                                ./images/project/tehno/tehno-min-d@2x.jpg 2x
-                                " />
+      <section class="section">
+        <div class="container container__portfolio">
+          <h1 class="section__title visually-hidden">Портфоліо</h1>
+          <ul class="portfolio">
+            <li class="portfolio__item">
+              <button class="portfolio__button" type="button">Усі</button>
+            </li>
+            <li class="portfolio__item">
+              <button class="portfolio__button" type="button">Веб-сайти</button>
+            </li>
+            <li class="portfolio__item">
+              <button class="portfolio__button" type="button">Додатки</button>
+            </li>
+            <li class="portfolio__item">
+              <button class="portfolio__button" type="button">Дизайн</button>
+            </li>
+            <li class="portfolio__item">
+              <button class="portfolio__button" type="button">Маркетинг</button>
+            </li>
+          </ul>
 
-                            <source media="(min-width: 768px)" srcset="
-                                ./images/project/tehno/tehno-min-t.webp 1x,
-                                ./images/project/tehno/tehno-min-t@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 768px)" srcset="
-                                ./images/project/tehno/tehno-min-t.jpg 1x,
-                                    ./images/project/tehno/tehno-min-t@2x.jpg 2x
-                                " />
+          <ul class="projects container__projects">
+            <li class="projects__item">
+              <a href="" class="projects__link">
+                <div class="projects__position">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/project/tehno/tehno-min-d.webp    1x,
+                        ./images/project/tehno/tehno-min-d@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/project/tehno/tehno-min-d.jpg    1x,
+                        ./images/project/tehno/tehno-min-d@2x.jpg 2x
+                      "
+                    />
 
-                            <source media="(min-width: 280px)" srcset="
-                                ./images/project/tehno/tehno-min.webp 1x,
-                                ./images/project/tehno/tehno-min@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 280px)" srcset="
-                                ./images/project/tehno/tehno-min.jpg 1x,
-                                ./images/project/tehno/tehno-min@2x.jpg 2x
-                                " />
-                        <img src="./images/project/tehno/tehno-min.jpg" alt="Технокряк"/>
-                        </picture>
-                            <p class="projects__overley">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
-                        </div>
-                        <div class="projects__holder">
-                            <h2 class="projects__title">Технокряк</h2>
-                            <p class="projects__description">Веб-сайт</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="projects__item">
-                    <a href="" class="projects__link">
-                        <div class="projects__position">
-                        <picture>
-                            <source media="(min-width: 1200px)" srcset="
-                                ./images/project/poster/poster-min-d.webp 1x,
-                                ./images/project/poster/poster-min-d@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 1200px)" srcset="
-                                ./images/project/poster/poster-min-d.jpg 1x,
-                                ./images/project/poster/poster-min-d@2x.jpg 2x
-                                " />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/project/tehno/tehno-min-t.webp    1x,
+                        ./images/project/tehno/tehno-min-t@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/project/tehno/tehno-min-t.jpg    1x,
+                        ./images/project/tehno/tehno-min-t@2x.jpg 2x
+                      "
+                    />
 
-                            <source media="(min-width: 768px)" srcset="
-                                ./images/project/poster/poster-min-t.webp 1x,
-                                ./images/project/poster/poster-min-t@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 768px)" srcset="
-                                ./images/project/poster/poster-min-t.jpg 1x,
-                                    ./images/project/poster/poster-min-t@2x.jpg 2x
-                                " />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/project/tehno/tehno-min.webp    1x,
+                        ./images/project/tehno/tehno-min@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/project/tehno/tehno-min.jpg    1x,
+                        ./images/project/tehno/tehno-min@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/project/tehno/tehno-min.jpg"
+                      alt="Технокряк"
+                    />
+                  </picture>
+                  <p class="projects__overley">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="projects__holder">
+                  <h2 class="projects__title">Технокряк</h2>
+                  <p class="projects__description">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a href="" class="projects__link">
+                <div class="projects__position">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/project/poster/poster-min-d.webp    1x,
+                        ./images/project/poster/poster-min-d@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/project/poster/poster-min-d.jpg    1x,
+                        ./images/project/poster/poster-min-d@2x.jpg 2x
+                      "
+                    />
 
-                            <source media="(min-width: 280px)" srcset="
-                                ./images/project/poster/poster-min.webp 1x,
-                                ./images/project/poster/poster-min@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 280px)" srcset="
-                                ./images/project/poster/poster-min.jpg 1x,
-                                ./images/project/poster/poster-min@2x.jpg 2x
-                                " />
-                        <img src="./images/project/poster/poster-min.jpg" alt="Постер New Orlean vs Golden Star"/>
-                        </picture>
-                            <p class="projects__overley">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, eaque animi corporis tempore doloribus quidem voluptates eos quaerat dignissimos facere cupiditate ipsam nemo autem consectetur</p></div>
-                        <div class="projects__holder">
-                            <h2 class="projects__title">Постер New Orlean vs Golden Star</h2>
-                            <p class="projects__description">Дизайн</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="projects__item">
-                    <a href="" class="projects__link">
-                        <div class="projects__position">
-                        <picture>
-                            <source media="(min-width: 1200px)" srcset="
-                                ./images/project/seafood/seafood-min-d.webp 1x,
-                                ./images/project/seafood/seafood-min-d@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 1200px)" srcset="
-                                ./images/project/seafood/seafood-min-d.jpg 1x,
-                                ./images/project/seafood/seafood-min-d@2x.jpg 2x
-                                " />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/project/poster/poster-min-t.webp    1x,
+                        ./images/project/poster/poster-min-t@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/project/poster/poster-min-t.jpg    1x,
+                        ./images/project/poster/poster-min-t@2x.jpg 2x
+                      "
+                    />
 
-                            <source media="(min-width: 768px)" srcset="
-                                ./images/project/seafood/seafood-min-t.webp 1x,
-                                ./images/project/seafood/seafood-min-t@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 768px)" srcset="
-                                ./images/project/seafood/seafood-min-t.jpg 1x,
-                                    ./images/project/seafood/seafood-min-t@2x.jpg 2x
-                                " />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/project/poster/poster-min.webp    1x,
+                        ./images/project/poster/poster-min@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/project/poster/poster-min.jpg    1x,
+                        ./images/project/poster/poster-min@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/project/poster/poster-min.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                    />
+                  </picture>
+                  <p class="projects__overley">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Iste, eaque animi corporis tempore doloribus quidem
+                    voluptates eos quaerat dignissimos facere cupiditate ipsam
+                    nemo autem consectetur
+                  </p>
+                </div>
+                <div class="projects__holder">
+                  <h2 class="projects__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="projects__description">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a href="" class="projects__link">
+                <div class="projects__position">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/project/seafood/seafood-min-d.webp    1x,
+                        ./images/project/seafood/seafood-min-d@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/project/seafood/seafood-min-d.jpg    1x,
+                        ./images/project/seafood/seafood-min-d@2x.jpg 2x
+                      "
+                    />
 
-                            <source media="(min-width: 280px)" srcset="
-                                ./images/project/seafood/seafood-min.webp 1x,
-                                ./images/project/seafood/seafood-min@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 280px)" srcset="
-                                ./images/project/seafood/seafood-min.jpg 1x,
-                                ./images/project/seafood/seafood-min@2x.jpg 2x
-                                " />
-                        <img src="./images/project/seafood/seafood-min.jpg" alt="Ресторан Seafood"/>
-                        </picture>
-                            <p class="projects__overley">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, eaque animi corporis tempore doloribus quidem voluptates
-                            eos quaerat dignissimos facere cupiditate ipsam nemo autem consectetur</p></div>
-                        <div class="projects__holder">
-                            <h2 class="projects__title">Ресторан Seafood</h2>
-                            <p class="projects__description">Приложение</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="projects__item">
-                    <a href="" class="projects__link">
-                        <div class="projects__position">
-                        <picture>
-                            <source media="(min-width: 1200px)" srcset="
-                                ./images/project/prime/prime-min-d.webp 1x,
-                                ./images/project/prime/prime-min-d@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 1200px)" srcset="
-                                ./images/project/prime/prime-min-d.jpg 1x,
-                                ./images/project/prime/prime-min-d@2x.jpg 2x
-                                " />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/project/seafood/seafood-min-t.webp    1x,
+                        ./images/project/seafood/seafood-min-t@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/project/seafood/seafood-min-t.jpg    1x,
+                        ./images/project/seafood/seafood-min-t@2x.jpg 2x
+                      "
+                    />
 
-                            <source media="(min-width: 768px)" srcset="
-                                ./images/project/prime/prime-min-t.webp 1x,
-                                ./images/project/prime/prime-min-t@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 768px)" srcset="
-                                ./images/project/prime/prime-min-t.jpg 1x,
-                                    ./images/project/prime/prime-min-t@2x.jpg 2x
-                                " />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/project/seafood/seafood-min.webp    1x,
+                        ./images/project/seafood/seafood-min@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/project/seafood/seafood-min.jpg    1x,
+                        ./images/project/seafood/seafood-min@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/project/seafood/seafood-min.jpg"
+                      alt="Ресторан Seafood"
+                    />
+                  </picture>
+                  <p class="projects__overley">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Iste, eaque animi corporis tempore doloribus quidem
+                    voluptates eos quaerat dignissimos facere cupiditate ipsam
+                    nemo autem consectetur
+                  </p>
+                </div>
+                <div class="projects__holder">
+                  <h2 class="projects__title">Ресторан Seafood</h2>
+                  <p class="projects__description">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a href="" class="projects__link">
+                <div class="projects__position">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/project/prime/prime-min-d.webp    1x,
+                        ./images/project/prime/prime-min-d@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/project/prime/prime-min-d.jpg    1x,
+                        ./images/project/prime/prime-min-d@2x.jpg 2x
+                      "
+                    />
 
-                            <source media="(min-width: 280px)" srcset="
-                                ./images/project/prime/prime-min.webp 1x,
-                                ./images/project/prime/prime-min@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 280px)" srcset="
-                                ./images/project/prime/prime-min.jpg 1x,
-                                ./images/project/prime/prime-min@2x.jpg 2x
-                                " />
-                        <img src="./images/project/prime/prime-min.jpg" alt="Проект Prime"/>
-                        </picture>
-                            <p class="projects__overley">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, eaque animi corporis tempore
-                            doloribus quidem voluptates
-                            eos quaerat dignissimos facere cupiditate ipsam nemo autem consectetur</p></div>
-                        <div class="projects__holder">
-                            <h2 class="projects__title">Проект Prime</h2>
-                        <p class="projects__description">Маркетинг</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="projects__item">
-                    <a href="" class="projects__link">
-                        <div class="projects__position">
-                        <picture>
-                            <source media="(min-width: 1200px)" srcset="
-                                ./images/project/boxes/boxes-min-d.webp 1x,
-                                ./images/project/boxes/boxes-min-d@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 1200px)" srcset="
-                                ./images/project/boxes/boxes-min-d.jpg 1x,
-                                ./images/project/boxes/boxes-min-d@2x.jpg 2x
-                                " />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/project/prime/prime-min-t.webp    1x,
+                        ./images/project/prime/prime-min-t@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/project/prime/prime-min-t.jpg    1x,
+                        ./images/project/prime/prime-min-t@2x.jpg 2x
+                      "
+                    />
 
-                            <source media="(min-width: 768px)" srcset="
-                                ./images/project/boxes/boxes-min-t.webp 1x,
-                                ./images/project/boxes/boxes-min-t@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 768px)" srcset="
-                                ./images/project/boxes/boxes-min-t.jpg 1x,
-                                    ./images/project/boxes/boxes-min-t@2x.jpg 2x
-                                " />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/project/prime/prime-min.webp    1x,
+                        ./images/project/prime/prime-min@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/project/prime/prime-min.jpg    1x,
+                        ./images/project/prime/prime-min@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/project/prime/prime-min.jpg"
+                      alt="Проект Prime"
+                    />
+                  </picture>
+                  <p class="projects__overley">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Iste, eaque animi corporis tempore doloribus quidem
+                    voluptates eos quaerat dignissimos facere cupiditate ipsam
+                    nemo autem consectetur
+                  </p>
+                </div>
+                <div class="projects__holder">
+                  <h2 class="projects__title">Проєкт Prime</h2>
+                  <p class="projects__description">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a href="" class="projects__link">
+                <div class="projects__position">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/project/boxes/boxes-min-d.webp    1x,
+                        ./images/project/boxes/boxes-min-d@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/project/boxes/boxes-min-d.jpg    1x,
+                        ./images/project/boxes/boxes-min-d@2x.jpg 2x
+                      "
+                    />
 
-                            <source media="(min-width: 280px)" srcset="
-                                ./images/project/boxes/boxes-min.webp 1x,
-                                ./images/project/boxes/boxes-min@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 280px)" srcset="
-                                ./images/project/boxes/boxes-min.jpg 1x,
-                                ./images/project/boxes/boxes-min@2x.jpg 2x
-                                " />
-                        <img src="./images/project/boxes/boxes-min.jpg" alt="Проект Boxes"/>
-                        </picture>
-                            <p class="projects__overley">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, eaque animi corporis tempore
-                            doloribus quidem voluptates
-                            eos quaerat dignissimos facere cupiditate ipsam nemo autem consectetur</p></div>
-                        <div class="projects__holder">
-                            <h2 class="projects__title">Проект Boxes</h2>
-                            <p class="projects__description">Приложение</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="projects__item">
-                    <a href="" class="projects__link">
-                        <div class="projects__position">
-                        <picture>
-                            <source media="(min-width: 1200px)" srcset="
-                                ./images/project/inspiration/inspiration-min-d.webp 1x,
-                                ./images/project/inspiration/inspiration-min-d@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 1200px)" srcset="
-                                ./images/project/inspiration/inspiration-min-d.jpg 1x,
-                                ./images/project/inspiration/inspiration-min-d@2x.jpg 2x
-                                " />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/project/boxes/boxes-min-t.webp    1x,
+                        ./images/project/boxes/boxes-min-t@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/project/boxes/boxes-min-t.jpg    1x,
+                        ./images/project/boxes/boxes-min-t@2x.jpg 2x
+                      "
+                    />
 
-                            <source media="(min-width: 768px)" srcset="
-                                ./images/project/inspiration/inspiration-min-t.webp 1x,
-                                ./images/project/inspiration/inspiration-min-t@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 768px)" srcset="
-                                ./images/project/inspiration/inspiration-min-t.jpg 1x,
-                                    ./images/project/inspiration/inspiration-min-t@2x.jpg 2x
-                                " />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/project/boxes/boxes-min.webp    1x,
+                        ./images/project/boxes/boxes-min@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/project/boxes/boxes-min.jpg    1x,
+                        ./images/project/boxes/boxes-min@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/project/boxes/boxes-min.jpg"
+                      alt="Проект Boxes"
+                    />
+                  </picture>
+                  <p class="projects__overley">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Iste, eaque animi corporis tempore doloribus quidem
+                    voluptates eos quaerat dignissimos facere cupiditate ipsam
+                    nemo autem consectetur
+                  </p>
+                </div>
+                <div class="projects__holder">
+                  <h2 class="projects__title">Проєкт Boxes</h2>
+                  <p class="projects__description">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a href="" class="projects__link">
+                <div class="projects__position">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/project/inspiration/inspiration-min-d.webp    1x,
+                        ./images/project/inspiration/inspiration-min-d@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/project/inspiration/inspiration-min-d.jpg    1x,
+                        ./images/project/inspiration/inspiration-min-d@2x.jpg 2x
+                      "
+                    />
 
-                            <source media="(min-width: 280px)" srcset="
-                                ./images/project/inspiration/inspiration-min.webp 1x,
-                                ./images/project/inspiration/inspiration-min@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 280px)" srcset="
-                                ./images/project/inspiration/inspiration-min.jpg 1x,
-                                ./images/project/inspiration/inspiration-min@2x.jpg 2x
-                                " />
-                        <img src="./images/project/inspiration/inspiration-min.jpg" alt="Inspiration has no Borders"/>
-                        </picture>
-                            <p class="projects__overley">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, eaque animi corporis tempore
-                            doloribus quidem voluptates
-                            eos quaerat dignissimos facere cupiditate ipsam nemo autem consectetur</p></div>
-                        <div class="projects__holder">
-                            <h2 class="projects__title">Inspiration has no Borders</h2>
-                            <p class="projects__description">Веб-сайт</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="projects__item">
-                    <a href="" class="projects__link">
-                        <div class="projects__position">
-                        <picture>
-                            <source media="(min-width: 1200px)" srcset="
-                                ./images/project/limited/limited-min-d.webp 1x,
-                                ./images/project/limited/limited-min-d@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 1200px)" srcset="
-                                ./images/project/limited/limited-min-d.jpg 1x,
-                                ./images/project/limited/limited-min-d@2x.jpg 2x
-                                " />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/project/inspiration/inspiration-min-t.webp    1x,
+                        ./images/project/inspiration/inspiration-min-t@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/project/inspiration/inspiration-min-t.jpg    1x,
+                        ./images/project/inspiration/inspiration-min-t@2x.jpg 2x
+                      "
+                    />
 
-                            <source media="(min-width: 768px)" srcset="
-                                ./images/project/limited/limited-min-t.webp 1x,
-                                ./images/project/limited/limited-min-t@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 768px)" srcset="
-                                ./images/project/limited/limited-min-t.jpg 1x,
-                                    ./images/project/limited/limited-min-t@2x.jpg 2x
-                                " />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/project/inspiration/inspiration-min.webp    1x,
+                        ./images/project/inspiration/inspiration-min@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/project/inspiration/inspiration-min.jpg    1x,
+                        ./images/project/inspiration/inspiration-min@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/project/inspiration/inspiration-min.jpg"
+                      alt="Inspiration has no Borders"
+                    />
+                  </picture>
+                  <p class="projects__overley">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Iste, eaque animi corporis tempore doloribus quidem
+                    voluptates eos quaerat dignissimos facere cupiditate ipsam
+                    nemo autem consectetur
+                  </p>
+                </div>
+                <div class="projects__holder">
+                  <h2 class="projects__title">Inspiration has no Borders</h2>
+                  <p class="projects__description">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a href="" class="projects__link">
+                <div class="projects__position">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/project/limited/limited-min-d.webp    1x,
+                        ./images/project/limited/limited-min-d@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/project/limited/limited-min-d.jpg    1x,
+                        ./images/project/limited/limited-min-d@2x.jpg 2x
+                      "
+                    />
 
-                            <source media="(min-width: 280px)" srcset="
-                                ./images/project/limited/limited-min.webp 1x,
-                                ./images/project/limited/limited-min@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 280px)" srcset="
-                                ./images/project/limited/limited-min.jpg 1x,
-                                ./images/project/limited/limited-min@2x.jpg 2x
-                                " />
-                        <img src="./images/project/limited/limited-min.jpg" alt="Издание Limited Edition"/>
-                        </picture>
-                            <p class="projects__overley">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, eaque animi corporis tempore
-                            doloribus quidem voluptates
-                            eos quaerat dignissimos facere cupiditate ipsam nemo autem consectetur</p></div>
-                        <div class="projects__holder">
-                            <h2 class="projects__title">Издание Limited Edition</h2>
-                            <p class="projects__description">Дизайн</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="projects__item">
-                    <a href="" class="projects__link">
-                        <div class="projects__position">
-                        <picture>
-                            <source media="(min-width: 1200px)" srcset="
-                                ./images/project/lab/lab-min-d.webp 1x,
-                                ./images/project/lab/lab-min-d@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 1200px)" srcset="
-                                ./images/project/lab/lab-min-d.jpg 1x,
-                                ./images/project/lab/lab-min-d@2x.jpg 2x
-                                " />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/project/limited/limited-min-t.webp    1x,
+                        ./images/project/limited/limited-min-t@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/project/limited/limited-min-t.jpg    1x,
+                        ./images/project/limited/limited-min-t@2x.jpg 2x
+                      "
+                    />
 
-                            <source media="(min-width: 768px)" srcset="
-                                ./images/project/lab/lab-min-t.webp 1x,
-                                ./images/project/lab/lab-min-t@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 768px)" srcset="
-                                ./images/project/lab/lab-min-t.jpg 1x,
-                                    ./images/project/lab/lab-min-t@2x.jpg 2x
-                                " />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/project/limited/limited-min.webp    1x,
+                        ./images/project/limited/limited-min@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/project/limited/limited-min.jpg    1x,
+                        ./images/project/limited/limited-min@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/project/limited/limited-min.jpg"
+                      alt="Издание Limited Edition"
+                    />
+                  </picture>
+                  <p class="projects__overley">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Iste, eaque animi corporis tempore doloribus quidem
+                    voluptates eos quaerat dignissimos facere cupiditate ipsam
+                    nemo autem consectetur
+                  </p>
+                </div>
+                <div class="projects__holder">
+                  <h2 class="projects__title">Видання Limited Edition</h2>
+                  <p class="projects__description">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a href="" class="projects__link">
+                <div class="projects__position">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/project/lab/lab-min-d.webp    1x,
+                        ./images/project/lab/lab-min-d@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/project/lab/lab-min-d.jpg    1x,
+                        ./images/project/lab/lab-min-d@2x.jpg 2x
+                      "
+                    />
 
-                            <source media="(min-width: 280px)" srcset="
-                                ./images/project/lab/lab-min.webp 1x,
-                                ./images/project/lab/lab-min@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 280px)" srcset="
-                                ./images/project/lab/lab-min.jpg 1x,
-                                ./images/project/lab/lab-min@2x.jpg 2x
-                                " />
-                        <img src="./images/project/lab/lab-min.jpg" alt="Проект LAB"/>
-                        </picture>
-                            <p class="projects__overley">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, eaque animi corporis tempore
-                            doloribus quidem voluptates
-                            eos quaerat dignissimos facere cupiditate ipsam nemo autem consectetur</p></div>
-                        <div class="projects__holder">
-                            <h2 class="projects__title">Проект LAB</h2>
-                            <p class="projects__description">Маркетинг</p>
-                        </div>
-                    </a>
-                </li>
-                <li class="projects__item">
-                    <a href="" class="projects__link">
-                        <div class="projects__position">
-                        <picture>
-                            <source media="(min-width: 1200px)" srcset="
-                                ./images/project/growing/growing-min-d.webp 1x,
-                                ./images/project/growing/growing-min-d@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 1200px)" srcset="
-                                ./images/project/growing/growing-min-d.jpg 1x,
-                                ./images/project/growing/growing-min-d@2x.jpg 2x
-                                " />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/project/lab/lab-min-t.webp    1x,
+                        ./images/project/lab/lab-min-t@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/project/lab/lab-min-t.jpg    1x,
+                        ./images/project/lab/lab-min-t@2x.jpg 2x
+                      "
+                    />
 
-                            <source media="(min-width: 768px)" srcset="
-                                ./images/project/growing/growing-min-t.webp 1x,
-                                ./images/project/growing/growing-min-t@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 768px)" srcset="
-                                ./images/project/growing/growing-min-t.jpg 1x,
-                                    ./images/project/growing/growing-min-t@2x.jpg 2x
-                                " />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/project/lab/lab-min.webp    1x,
+                        ./images/project/lab/lab-min@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/project/lab/lab-min.jpg    1x,
+                        ./images/project/lab/lab-min@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/project/lab/lab-min.jpg"
+                      alt="Проект LAB"
+                    />
+                  </picture>
+                  <p class="projects__overley">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Iste, eaque animi corporis tempore doloribus quidem
+                    voluptates eos quaerat dignissimos facere cupiditate ipsam
+                    nemo autem consectetur
+                  </p>
+                </div>
+                <div class="projects__holder">
+                  <h2 class="projects__title">Проєкт LAB</h2>
+                  <p class="projects__description">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a href="" class="projects__link">
+                <div class="projects__position">
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/project/growing/growing-min-d.webp    1x,
+                        ./images/project/growing/growing-min-d@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/project/growing/growing-min-d.jpg    1x,
+                        ./images/project/growing/growing-min-d@2x.jpg 2x
+                      "
+                    />
 
-                            <source media="(min-width: 280px)" srcset="
-                                ./images/project/growing/growing-min.webp 1x,
-                                ./images/project/growing/growing-min@2x.webp 2x
-                                " type="image/webp" />
-                            <source media="(min-width: 280px)" srcset="
-                                ./images/project/growing/growing-min.jpg 1x,
-                                ./images/project/growing/growing-min@2x.jpg 2x
-                                " />
-                        <img src="./images/project/growing/growing-min.jpg" alt="Growing Business"/>
-                        </picture>
-                            <p class="projects__overley">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, eaque animi corporis tempore
-                            doloribus quidem voluptates
-                            eos quaerat dignissimos facere cupiditate ipsam nemo autem consectetur</p></div>
-                        <div class="projects__holder">
-                            <h2 class="projects__title">Growing Business</h2>
-                            <p class="projects__description">Приложение</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-            </div>
-        </section>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/project/growing/growing-min-t.webp    1x,
+                        ./images/project/growing/growing-min-t@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/project/growing/growing-min-t.jpg    1x,
+                        ./images/project/growing/growing-min-t@2x.jpg 2x
+                      "
+                    />
+
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/project/growing/growing-min.webp    1x,
+                        ./images/project/growing/growing-min@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 280px)"
+                      srcset="
+                        ./images/project/growing/growing-min.jpg    1x,
+                        ./images/project/growing/growing-min@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="./images/project/growing/growing-min.jpg"
+                      alt="Growing Business"
+                    />
+                  </picture>
+                  <p class="projects__overley">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Iste, eaque animi corporis tempore doloribus quidem
+                    voluptates eos quaerat dignissimos facere cupiditate ipsam
+                    nemo autem consectetur
+                  </p>
+                </div>
+                <div class="projects__holder">
+                  <h2 class="projects__title">Growing Business</h2>
+                  <p class="projects__description">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
     <footer class="footer footer--dark-background">
-        <div class="container container__footer">
-            <div class="info">
-                <a class="logo" lang="en" href=""><span class="logo__accent">Web</span><span
-                        class="logo__light">Studio</span></a>
-                <address class="address container__address">
-                    <ul class="address__list">
-                        <li class="address__item address__light">г. Киев, пр-т Леси Украинки, 26</li>
-                        <li class="address__item"><a class="address__dark" lang="en"
-                                href="mailto:info@example.com">info@example.com</a></li>
-                        <li class="address__item"><a class="address__dark" href="tel:+380991111111">+38 096 111 11
-                                11</a>
-                        </li>
-                    </ul>
-                </address>
-            </div>
-            <div class="join container__join">
-                <h3 class="join__title">присоединяйтесь</h3>
-                <ul class="social">
-                    <li class="social__item">
-                        <a href="" class="social__link">
-                            <svg class="social__icon socials--icon-white-fill" width="20" height="20">
-                                <use href="./images/sprite.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="" class="social__link">
-                            <svg class="social__icon socials--icon-white-fill" width="20" height="20">
-                                <use href="./images/sprite.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="" class="social__link">
-                            <svg class="social__icon socials--icon-white-fill" width="20" height="20">
-                                <use href="./images/sprite.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social__item">
-                        <a href="" class="social__link">
-                            <svg class="social__icon socials--icon-white-fill" width="20" height="20">
-                                <use href="./images/sprite.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="subscribe container__subscribe">
-                <h3 class="subscribe__title">Подпишитесь на рассылку</h3>
-                <form class="subscribe__form">
-                    <input class="subscribe__input" name="email" type="email" placeholder="E-mail" />
-                    <button class="button subscribe__button" type="submit">Подписаться
-                        <svg class="subscribe__icon" width="24" height="24">
-                            <use href="./images/sprite.svg#icon-send"></use>
-                        </svg></button>
-                </form>
-            </div>
+      <div class="container container__footer">
+        <div class="info">
+          <a class="logo" lang="en" href=""
+            ><span class="logo__accent">Web</span
+            ><span class="logo__light">Studio</span></a
+          >
+          <address class="address container__address">
+            <ul class="address__list">
+              <li class="address__item address__light">
+                м. Київ, пр-т Лесі Українки, 26
+              </li>
+              <li class="address__item">
+                <a
+                  class="address__dark"
+                  lang="en"
+                  href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="address__item">
+                <a class="address__dark" href="tel:+380991111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
         </div>
+        <div class="join container__join">
+          <h3 class="join__title">приєднуйтесь</h3>
+          <ul class="social">
+            <li class="social__item">
+              <a href="" class="social__link">
+                <svg
+                  class="social__icon socials--icon-white-fill"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <svg
+                  class="social__icon socials--icon-white-fill"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <svg
+                  class="social__icon socials--icon-white-fill"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <svg
+                  class="social__icon socials--icon-white-fill"
+                  width="20"
+                  height="20"
+                >
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe container__subscribe">
+          <h3 class="subscribe__title">Підпишіться на розсилку</h3>
+          <form class="subscribe__form">
+            <input
+              class="subscribe__input"
+              name="email"
+              type="email"
+              placeholder="E-mail"
+            />
+            <button class="button subscribe__button" type="submit">
+              Підписатися
+              <svg class="subscribe__icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
     </footer>
     <script src="./js/mobile-menu.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-        crossorigin="anonymous"></script>
-</body>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
